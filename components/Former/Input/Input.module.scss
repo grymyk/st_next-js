@@ -1,0 +1,59 @@
+.input_params {
+  z-index: 1;
+  padding: 0 10px;
+  background: rgba(#AAA, 0.25);
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  h4 {
+    margin: 0 auto;
+    padding: 20px 0;
+    cursor: pointer;
+
+    text-transform: uppercase;
+    text-align: center;
+    width: 202px;
+    font-weight: 700;
+
+    &:after {
+      padding: 0 0 0 9px;
+      margin: 0;
+      width: 9px;
+      height: 9px;
+      top: -1px;
+      position: relative;
+    }
+  }
+}
+
+.vertical {
+  margin: 10px auto 0;
+  width: 50px;
+
+  span {
+    text-align: center;
+    width: 20px;
+  }
+}
+
+.horizontal {
+  overflow: hidden;
+  margin: 10px auto 0;
+  width: 160px;
+
+  span {
+    width: 28px;
+    float: left;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .input_params {
+    left: 20%;
+    transform: translate(10px, 0);
+  }
+}

@@ -1,12 +1,11 @@
 import Layout from "../components/Layout";
-import Home from "../components/Home";
+import Former from "../components/Former";
 
-export default function HomePage() {
-
+export default function FormerPage() {
   return (
     <>
       <Layout>
-          <Home />
+          <Former />
       </Layout>
     </>
   );

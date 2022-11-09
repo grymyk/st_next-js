@@ -1,0 +1,25 @@
+.voter {
+    text-align: center;
+    float: left;
+  }
+
+  .btn {
+    cursor: pointer;
+    font-size: 32px;
+    padding: 0 5px;
+    display: block;
+    margin: 0 0 0 10px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background: #85c47e;
+    user-select: none;
+    color: #fff;
+    float: left;
+
+    &.lock {
+      background-color: transparent;
+      border-color: transparent;
+      cursor: text;
+    }
+}
