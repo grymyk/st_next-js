@@ -16,7 +16,7 @@ export default function Layout({ children }) {
                 { children }
             </main>
 
-            <Footer />
+            <Footer year={2023} />
         </>
     );
 }
