@@ -29,7 +29,7 @@ export default function ContactForm() {
   });
 
   const handleServerResponse = (ok, msg) => {
-    if (ok) {
+    if ( ok ) {
       setStatus({
         submitted: true,
         submitting: false,
@@ -76,7 +76,7 @@ export default function ContactForm() {
       .then((response) => {
         handleServerResponse(
           true,
-          'Thank you, your message has been submitted.',
+          'Thank you, your message has been send.',
         );
       })
       .catch((error) => {
@@ -158,11 +158,15 @@ export default function ContactForm() {
             </button>
         </div>
       </form>
-
       { status.info.error && (
         <div className="error">Error: {status.info.msg}</div>
       )}
-      { !status.info.error && status.info.msg && <p>{status.info.msg}</p>}
+      {
+        !status.info.error && status.info.msg &&
+            <p className="mt-2 mx-4 sm:mx-20 sm:w-96 sm:text-center" >
+                { status.info.msg }
+            </p>
+        }
     </main>
   );
 };
